@@ -1,0 +1,11 @@
+FROM node:20.5.1-slim
+
+RUN npm i -g @nestjs/cli
+
+USER node
+
+WORKDIR /var/www/app
+
+RUN export NODE_ENV="test"
+
+CMD [ "tail", "-f", "/dev/null" ]
