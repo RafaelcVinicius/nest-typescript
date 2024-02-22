@@ -1,7 +1,7 @@
 import { Column, DataType, Table } from 'sequelize-typescript';
 import SequelizeModel from '../../../../@shared/infra/db/model/sequelize.model';
 
-@Table({ tableName: 'order', timestamps: false })
+@Table({ tableName: 'order', timestamps: true })
 export default class OrderModel extends SequelizeModel<OrderModel> {
   @Column(DataType.UUID)
   declare public_id: string;

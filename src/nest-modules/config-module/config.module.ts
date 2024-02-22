@@ -46,7 +46,6 @@ export type CONFIG_SCHEMA_TYPE = DB_SCHEMA_TYPE;
 export class ConfigModule extends NestConfigModule {
   static forRoot(options: ConfigModuleOptions = {}) {
     const { envFilePath, ...otherOptions } = options;
-    console.log(process.env.NODE_ENV);
 
     return super.forRoot({
       isGlobal: true,

@@ -4,7 +4,7 @@ import { StoreOrderUseCase } from 'src/@core/order/application/use_cases/store/s
 import { StoreOrderDto } from './dto/store-order.dto';
 import { OrderPresenter } from './order.presenter';
 
-@Controller('order')
+@Controller('orders')
 export class OrderController {
   @Inject(StoreOrderUseCase)
   private storeUseCase: StoreOrderUseCase;

@@ -7,14 +7,10 @@ export type StoreTransactionInputConstructorProps = {
 export class StoreOrderInput {
   @IsString()
   @IsNotEmpty()
-  private _description: string;
+  description: string;
 
   constructor(props: StoreTransactionInputConstructorProps) {
-    this._description = props.description;
-  }
-
-  get description(): string {
-    return this._description;
+    this.description = props.description;
   }
 }
 
